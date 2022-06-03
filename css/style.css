@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/*ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ==============================================================================================*/
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*================================================*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*ОБОЛОЧКА===============================================================================================================*/
+
+.wrapper {
+  min-width: 100%;
+  background: linear-gradient(45deg, #09f143, #d05e00);
+}
+
+/*ОСНОВНАЯ СЕТКА====================================================================================*/
+
+._container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+/*MAIN===============================================================*/
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page__time {
+  text-align: center;
+  background-color: rgba(82, 85, 83, 0.2588235294);
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  body {
+    font-size: 21px;
+  }
+}
